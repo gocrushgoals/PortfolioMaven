@@ -1,9 +1,10 @@
 import React from 'react';
+import '../App.css';
 
 const AboutMe = () => (
   <section id="about-me">
-    <h2>About Me</h2>
-    <img src="../assets/images/maven.jpg" alt="profile picture" />"
+    <h3>About Me</h3>
+    <img src="./public/assets/images/maven.jpg.png" alt="profile picture" />"
     <p>
       Hi, my name is... my name is... my name is...
     </p>

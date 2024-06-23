@@ -1,4 +1,5 @@
 import React from 'react';
+import '../App.css';
 
 const Navigation = ({ currentSection, setCurrentSection }) => {
   const sections = ['About Me', 'Portfolio', 'Contact', 'Resume'];
