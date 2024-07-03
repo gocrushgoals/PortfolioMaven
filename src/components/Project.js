@@ -1,7 +1,7 @@
 import React from 'react';
 import '../App.css';
 
-const Project = ({ Project }) => (
+const Project = ({ title, image, deployedLink, repoLink }) => (
   <div className="project">
     <img src={project.image} alt={project.title} />
     <h3>{project.title}</h3>

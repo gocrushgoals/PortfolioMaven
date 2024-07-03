@@ -5,29 +5,25 @@ import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Resume from './components/Resume';
 import Footer from './components/Footer';
+import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import './App.css';
 
 const App = () => {
-  const [currentSection, setCurrentSection] = useState('About Me');
-
-  const renderSection = () => {
-    switch (currentSection) {
-      case 'Portfolio':
-        return <Portfolio />;
-      case 'Contact':
-        return <Contact />;
-      case 'Resume':
-        return <Resume />;
-      default:
-        return <AboutMe />;
-    }
-  };
-
   return (
-    <div>
-      <Header currentSection={currentSection} setCurrentSection={setCurrentSection}/>
-      {renderSection()}
-      <Footer />
-    </div>
+    <Router>
+      <div>
+        <Header />
+        <main>
+          <Switch>
+            <Route exact path="/" component={AboutMe} />
+            <Route path="/portfolio" component={Portfolio} />
+            <Route path="/contact" component={Contact} />
+            <Route path="/resume" component={Resume} />
+          </Switch>
+        </main>
+        <Footer />
+      </div>
+    </Router>
   );
 };
 

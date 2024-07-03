@@ -11,7 +11,7 @@ const Footer = () => (
       <a href="https://github.com/">
          Github
       </a>
-      <a href="https://stacoverflow.com/">
+      <a href="https://stackoverflow.com/">
          Stack Overflow
       </a>
     </p>
