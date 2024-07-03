@@ -3,10 +3,10 @@ import '../App.css';
 
 const Project = ({ title, image, deployedLink, repoLink }) => (
   <div className="project">
-    <img src={project.image} alt={project.title} />
-    <h3>{project.title}</h3>
+    <img src={image} alt={title} />
+    <h3>{title}</h3>
     <p>
-      <a href={project.liveURL}>Live</a> | <a href={project.repoLink}>GitHub</a>
+      <a href={deployedLink}>Live</a> | <a href={repoLink}>GitHub</a>
     </p>
   </div>
 );
