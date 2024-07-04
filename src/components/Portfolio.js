@@ -4,13 +4,13 @@ import '../styles/App.css';
 
 const projects = [
   {
-    image: "/assets/images/maven.jpg.png",
+    image: '/assets/images/maven.jpg.png',
     title: "Project Title",
     description: "Project Description",
     link: "https://www.google.com"
   },
   {
-    image: "/assets/images/maven.jpg.png",
+    image: '/assets/images/maven.jpg.png',
     title: "Project 2 Title",
     description: "Project 2 Description",
     link: "https://www.google.com"

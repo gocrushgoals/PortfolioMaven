@@ -1,10 +1,11 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import Navigation from './Navigation';
 import '../styles/App.css';
 
 const Header = () => (
   <header>
-    <h1>Your Name</h1>
+    <h1>Kristi's Portfolio</h1>
     <nav>
       <ul>
         <li><NavLink exact to="/" activeClassName="active">About Me</NavLink></li>
