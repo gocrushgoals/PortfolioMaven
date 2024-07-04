@@ -2,18 +2,21 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: './src/index.js', // Replace with your entry point
+  entry: './src/index.jsx', 
   output: {
-    path: path.resolve(__dirname, 'dist'), // Replace with your output directory
-    filename: 'bundle.js' // Replace with your output bundle filename
+    path: path.resolve(__dirname, 'dist'), 
+    filename: 'bundle.js' 
   },
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader' // Make sure you have babel-loader configured for JSX and ES6
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-react']
+          }
         }
       },
       {
@@ -22,9 +25,19 @@ module.exports = {
       }
     ]
   },
+  resolve: {
+    extensions: ['.js', '.jsx'] // Ensure these extensions can be resolved
+  },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './public/index.html' // Specify your HTML template
+      template: './public/index.html' 
     })
-  ]
+  ],
+  devServer: {
+    static: {
+      directory: path.join(__dirname, 'public')
+    },
+    hot: true,
+    port: 8080
+  }
 };
