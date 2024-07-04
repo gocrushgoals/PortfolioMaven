@@ -23,6 +23,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
+.active {
+  /* Your active link styles here */
+  font-weight: bold;
+  color: blue;
+}
+
 /* Mobile-first styles */
 .App {
   text-align: center;

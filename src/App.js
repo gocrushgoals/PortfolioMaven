@@ -15,10 +15,10 @@ const App = () => {
         <Header />
         <main>
           <Routes>
-            <Route exact path="/" component={AboutMe} />
-            <Route path="/portfolio" component={Portfolio} />
-            <Route path="/contact" component={Contact} />
-            <Route path="/resume" component={Resume} />
+            <Route exact path="/" element={AboutMe} />
+            <Route path="/portfolio" element={Portfolio} />
+            <Route path="/contact" element={Contact} />
+            <Route path="/resume" element={Resume} />
           </Routes>
         </main>
         <Footer />

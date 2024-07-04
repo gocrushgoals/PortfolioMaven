@@ -5,11 +5,11 @@ import '../styles/App.css';
 
 const Header = () => (
   <header>
-    <h1>Kristi's Portfolio</h1>
+    <h3>Kristi's Portfolio</h3>
     <nav>
       <ul>
+        <li><NavLink exact="true" to="/" activeClassName="active">About Me</NavLink></li>
         <li><NavLink exact to="/" activeClassName="active">About Me</NavLink></li>
-        <li><NavLink to="/portfolio" activeClassName="active">Portfolio</NavLink></li>
         <li><NavLink to="/contact" activeClassName="active">Contact</NavLink></li>
         <li><NavLink to="/resume" activeClassName="active">Resume</NavLink></li>
       </ul>
