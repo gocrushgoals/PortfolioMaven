@@ -1,5 +1,5 @@
 import React from 'react';
-import '../App.css';
+import '../styles/App.css';
 
 const Project = ({ title, image, deployedLink, repoLink }) => (
   <div className="project">
