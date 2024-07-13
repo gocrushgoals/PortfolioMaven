@@ -1,12 +1,12 @@
 import React from 'react';
-import '../styles/App.css';
+import '../../src/App.css';
 
 const AboutMe = () => (
   <section id="about-me">
     <h3>About Me</h3>
-    <img src="./public/assets/images/maven.jpg.png" alt="profile picture" />"
+    <img src="/images/images.jpg" alt="profile picture" />
     <p>
-      Hi, my name is... my name is... my name is...
+      Hi, my name is Kristi
     </p>
     </section>
 );

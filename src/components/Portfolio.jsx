@@ -1,16 +1,15 @@
 import React from 'react';
-import Project from './Project';
-import '../styles/App.css';
+import '../../src/App.css';
 
 const projects = [
   {
-    image: '/assets/images/maven.jpg.png',
+    image: '/images/images.jpg',
     title: "Project Title",
     description: "Project Description",
     link: "https://www.google.com"
   },
   {
-    image: '/assets/images/maven.jpg.png',
+    image: '/images/images.jpg',
     title: "Project 2 Title",
     description: "Project 2 Description",
     link: "https://www.google.com"
