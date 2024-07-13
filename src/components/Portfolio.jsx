@@ -1,5 +1,5 @@
-import React from 'react';
 import '../../src/App.css';
+import React from 'react';
 
 const projects = [
   {
@@ -22,13 +22,12 @@ const Portfolio = () => (
     <h3>Portfolio</h3>
     <div className="projects">
       {projects.map((project) => (
-        <Project 
-          key={project.title} 
-          title={project.title}
-          description={project.description}
-          image={project.image}
-          link={project.link}
-        />
+        <div key={project.title} className="project">
+          <img src={project.image} alt={project.title} />
+          <h4>{project.title}</h4>
+          <p>{project.description}</p>
+          <a href={project.link} target="_blank" rel="noopener noreferrer">View Project</a>
+        </div>
       ))}
     </div>
   </section>
