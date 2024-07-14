@@ -4,7 +4,7 @@ import '../../src/App.css';
 const AboutMe = () => (
   <section id="about-me">
     <h3>About Me</h3>
-    <img src="/public/images/kristipfp.jpg" alt="profile picture" />
+    <img src="/images/kristipfp.jpg" alt="profile picture" />
     <p>
       Hi, my name is Kristi
     </p>

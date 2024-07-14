@@ -3,7 +3,7 @@ import React from 'react';
 
 const projects = [
   {
-    image: '/public/images/connect.png',
+    image: '/images/connect.png',
     title: "MavenConnect-API",
     description: "A social network web application, backend project",
     link: "https://github.com/gocrushgoals/MavenConnect-API"
