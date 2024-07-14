@@ -3,17 +3,17 @@ import React from 'react';
 
 const projects = [
   {
-    image: '/images/images.jpg',
-    title: "Project Title",
-    description: "Project Description",
-    link: "https://www.google.com"
-  },
-  {
-    image: '/images/images.jpg',
-    title: "Project 2 Title",
-    description: "Project 2 Description",
-    link: "https://www.google.com"
+    image: '/public/images/connect.png',
+    title: "MavenConnect-API",
+    description: "A social network web application, backend project",
+    link: "https://github.com/gocrushgoals/MavenConnect-API"
   }
+  // {
+  //   image: '/images/images.jpg',
+  //   title: "Project 2 Title",
+  //   description: "Project 2 Description",
+  //   link: "https://www.google.com"
+  // }
   // Add more projects here
 ];
 
